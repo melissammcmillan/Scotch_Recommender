@@ -12,7 +12,7 @@ scotches = pd.read_csv('data/labeled_distilleries.csv', index_col=0)
 
 #User chooses recommendation by distillery or by category
 st.write('Would you like a recommendation using a distillery or a category?')
-recomm_type = st.selectbox('Select', ["By Distillery", "By Category"])
+recomm_type = st.selectbox('Select', ["None", "By Distillery", "By Category"])
 #pick_distillery = st.checkbox('Do you want to see the thing?')
 
 #function for finding label of picked Distillery
