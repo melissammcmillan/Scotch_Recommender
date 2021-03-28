@@ -34,5 +34,18 @@ As a high-level overview, each scotch/distillery is broken down by flavor profil
 #### EDA and Findings
 Once I began to sort the scotches by their flavor profiles, for example looking at the scotches with Smoky > 2, I could see that there were patterns where the distilleries could be grouped together. There were many scotches where the Sweetness and Floral/Fruity flavors were scored highly and those scotches did not overlap with the most Smoky/Medicinal scotches. This kind of exploration can be seen in the 01_Clean_and_EDA notebook. After this experimentation, it occurred to me that I could probably use a simple K Means Clustering algorithm to try sorting/clustering these scotches together using the flavor profile data, so that's what I did.
 
+#### Final Production Model
+Using the elbow method, I experimented with K Means Clustering and found that the optimal number of clusters was ~3-4. I experimented with both 3 clusters and 4 clusters, and it seemed like 3 clusters gave the best/most logical groupings of the scotches. With 3 clusters, it was very clear which flavor profiles were driving the groupings. Group 0 contains the Honey, Spicy, Winey flavors that have some Fruity, Floral, Nutty flavor profiles. These scotches have lots of body. Group 1 contains the high Medicinal/Smoky scotches with high Body/Flavor, and Group 2 contains the Sweet/Fruity, Floral, and Nutty flavors that are more subtle (less Body). These are the categories I saved and used directly in the Recommender App.
 
-Not 100% finished, will finish soon...
+
+#### The Conclusion
+My quest to cluster scotches and turn the results into a recommender were successful. One can very easily access the App I made (link above), and ask for a recommendation either based on a distillery they already enjoy or pick the category they are in the mood for. While there is definitely room for improvement in this project, this is great start for my first recommender project. Any and all feedback is welcome!
+
+
+#### Improvements and Future Work
+Though my initial product was successful, there are many aspects of this project I'd like to improve. First, I'd like to get a bigger dataset that includes specific bottles/casks/ages instead of grouping by distillery. I'd also like to experiment with different clustering algorithms (like DB Scan) to see if that does any better with grouping the existing data. Additionally, there are lots of improvements to make on the App itself. It's very plain-looking right now, so I'd like to make it prettier. There are many functionality improvements to make as well, including a map that shows where the distilleries in each group are located, and I'd like to make radar/spider plots for each scotch the user selects so the flavor profiles can be compared. LOTS and LOTS of work left to do!
+
+
+#### Citations & Sources
+1. https://www.kaggle.com/koki25ando/scotch-whisky-dataset
+2. https://whiskyanalysis.com/index.php/methodology-introduction/methodology-flavour-comparison/
