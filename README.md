@@ -37,7 +37,7 @@ Once I began to sort the scotches by their flavor profiles, for example looking 
 #### Final Production Model
 Using the elbow method, I experimented with K Means Clustering and found that the optimal number of clusters was ~3-4. I experimented with both 3 clusters and 4 clusters, and it seemed like using 3 clusters gave the best/most logical groupings of the scotches. With 3 clusters, it was very clear which flavor profiles were driving the groupings. Group 0 contains the Honey, Spicy, Winey flavors that have some Fruity, Floral, Nutty flavor profiles. These scotches have lots of body. Group 1 contains the high Medicinal/Smoky scotches with high Body/Flavor, and Group 2 contains the Sweet/Fruity, Floral, and Nutty flavors that are more subtle (less Body). These are the categories I saved and used directly in the Recommender App. I used radar plots, like the one below, to compare the groupings and check for outliers.
 
-<img src="assets/Label_1_Scotches_Radar_Plot.png" width ="600" height="400">
+<img src="assets/Label_1_Scotches_Radar_Plot.png" width ="500" height="400">
 
 
 #### The Conclusion
