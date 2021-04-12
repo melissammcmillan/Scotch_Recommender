@@ -74,14 +74,14 @@ if recomm_type == "By Distillery":
     #'You selected: ', pick_distill
     #Here is the recommendation:
     st.write(f'Based on the distillery you chose, we recommend trying scotches from these other distilleries: {label_grabber(pick_distill)}')
-    st.balloons()
+    #st.balloons()
 
 #if picking by category, choose from the 3 categories and get recommendation
 if recomm_type == "By Category":
     pick_cat = st.selectbox('Select a Category', ['Smoky/Medicinal', 'Honey/Spicy/Winey', 'Sweet/Fruity/Floral'])
     #recommendations from that category
     st.write(f'Based on the category you chose, we recommend trying scotches from these distilleries: {cat_grabber(pick_cat)}')
-    st.balloons()
+    #st.balloons()
 
 #aesthetics
 background = \
