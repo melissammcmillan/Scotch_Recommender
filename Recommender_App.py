@@ -35,6 +35,7 @@ def label_grabber(distillery):
 
     #make a list of the distilleries using that label
     recommended_list = list(filter_df['Distillery'])
+    # I think I can try to simply remove the list() so the information doesn't come out all bracketed
 
     #return the list of distilleries in that filtered dataframe
     return recommended_list
