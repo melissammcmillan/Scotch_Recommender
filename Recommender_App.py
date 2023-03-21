@@ -67,7 +67,7 @@ def cat_grabber(category):
 
     #return the list of distilleries for those in df_label
     #list_of_recommendations = df_label['Distillery']
-    list_of_recommendations = list(df_label['Distillery'])
+    list_of_recommendations = tuple(df_label['Distillery'])
     return list_of_recommendations
 
 
