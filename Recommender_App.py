@@ -66,8 +66,8 @@ def cat_grabber(category):
     df_label = scotches[scotches['labels'] == label_selected]
 
     #return the list of distilleries for those in df_label
-    list_of_recommendations = df_label['Distillery']
-    #list_of_recommendations = list(df_label['Distillery'])
+    #list_of_recommendations = df_label['Distillery']
+    list_of_recommendations = list(df_label['Distillery'])
     return list_of_recommendations
 
 
