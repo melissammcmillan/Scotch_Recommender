@@ -39,9 +39,9 @@ def label_grabber(distillery):
     # I think I can try to simply remove the list() so the information doesn't come out all bracketed
 
     #return the list of distilleries in that filtered dataframe
-    for name in recommended_list:
-        return name
-    #return recommended_list
+    #for name in recommended_list:
+    #    return name
+    return recommended_list
 
 #function for recommending a distillery based on the category
 def cat_grabber(category):
