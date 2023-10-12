@@ -40,7 +40,7 @@ def label_grabber(distillery):
 
     #return the list of distilleries in that filtered dataframe
     for name in recommended_list:
-        print name
+        print(name)
     #return recommended_list
 
 #function for recommending a distillery based on the category
