@@ -5,7 +5,7 @@ import numpy as np
 
 #Welcome and Introduction
 st.header('Welcome to My Scotch Recommender.')
-st.subheader('Please use this App to pick your next scotch.')
+st.subheader('Please use this App to pick your next scotch!')
 
 #Load dataset
 scotches = pd.read_csv('data/labeled_distilleries.csv', index_col=0)
